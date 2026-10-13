@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+    pedis_database:
+        image: postgres:15-alpine
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: password
+            POSTGRES_DB: postgres
+        ports:
+            - "5433:5432"

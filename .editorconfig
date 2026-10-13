@@ -1,0 +1,26 @@
+# EditorConfig is awesome: https://editorconfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Global settings: Unix-style newlines, final newline, and 4-space indentation for all files
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+charset = utf-8
+
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+# Indentation override for all JS under lib directory (remains 2 spaces)
+[lib/**.js]
+indent_style = space
+indent_size = 2
+
+# Indentation override for .travis.yml (remains 2 spaces)
+[.travis.yml]
+indent_style = space
+indent_size = 2
